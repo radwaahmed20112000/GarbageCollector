@@ -15,7 +15,7 @@ public class Node {
 		this.isVisited = false;
 		this.startMemory = startMemory;
 		this.endMemory = endMemory;
-		this.length = endMemory - startMemory;
+		this.setLength(endMemory - startMemory);
 		this.nextNodes = new LinkedList<>();
 	}
 
@@ -61,6 +61,14 @@ public class Node {
 
 	public void setNextNodes(LinkedList<Node> nextNodes) {
 		this.nextNodes = nextNodes;
+	}
+
+	public int getLength() {
+		return length;
+	}
+
+	public void setLength(int length) {
+		this.length = length;
 	}
 
 }

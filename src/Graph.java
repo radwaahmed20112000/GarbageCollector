@@ -28,6 +28,10 @@ public class Graph {
 		return graph.get(id);
 	}
 
+	public void setIds(LinkedList<String> ids) {
+		this.ids = ids;
+	}
+
 	public HashMap<String, Node> getGraph() {
 		return graph;
 	}
